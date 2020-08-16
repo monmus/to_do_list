@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Monika Bilska">
+        <title>To Do List</title>
+        <link href = "style.css" rel="stylesheet">
+        <link href = "rwd.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Catamaran" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    </head>
+    <body>
+        <nav>
+            <label>Lista zadań</label>
+        </nav>
+        <div class="sidebar"></div>
+        <div class="big_container">
+            <main class="container">
+                <section class="task_to_post">
+                    <form id="new">
+                        <label>Do zrobienia</label>
+                        <div class="text_input">
+                            <input class="todo" type="text" id="task_to_add" placeholder="Wpisz tytuł zadania">
+                            <button type="submit" id="btn_add" onclick="myFunction()">Dodaj +</button>
+                        </div>    
+                    </form>
+                </section>    
+                <section class="list_with_tasks">
+                    
+                </section>
+            </main>
+
+            <main class="container">
+                <section class="task_to_post1">
+                    <form id="in_progress">
+                        <label>W trakcie</label>
+                        <div class="text_input">
+                            <input class="in_progress"  onfocus="this.value=''" type="text" id="task_to_add" placeholder="Wpisz tytuł zadania">
+                            <button type="submit" id="btn_add" onclick="myFunction1()">Dodaj +</button>
+                        </div>    
+                    </form>
+                </section>    
+                <section class="list_with_tasks1">
+                     
+                </section>
+            </main>
+
+            <main class="container">
+                <section class="task_to_post2">
+                    <form>
+                        <label>Zrobione</label>
+                        <div class="text_input">
+                            <input class="done" type="text" id="task_to_add" placeholder="Wpisz tytuł zadania">
+                            <button type="submit" id="btn_add" onclick="myFunction2()">Dodaj +</button>
+                        </div>    
+                    </form>
+                </section>    
+                <section class="list_with_tasks2">
+                  
+                </section>
+            </main>
+
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
