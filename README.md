@@ -10,6 +10,8 @@ Project is created with:
 * CSS 3
 * Vanilla Java Script
 
-extra feature: added complete/delete button
+Extra feature: added complete/delete button
 
 I am working now on drag&drop function
+
+#Live Demo
