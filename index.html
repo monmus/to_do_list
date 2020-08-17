@@ -20,6 +20,7 @@
                 <section class="task_to_post">
                     <form id="new">
                         <label>Do zrobienia</label>
+                        <label id="counter">(2)</label>
                         <div class="text_input">
                             <input class="todo" type="text" id="task_to_add" placeholder="Wpisz tytuł zadania">
                             <button type="submit" id="btn_add" onclick="myFunction()">Dodaj +</button>
@@ -27,7 +28,6 @@
                     </form>
                 </section>    
                 <section class="list_with_tasks">
-                    
                 </section>
             </main>
 
@@ -35,14 +35,14 @@
                 <section class="task_to_post1">
                     <form id="in_progress">
                         <label>W trakcie</label>
+                        <label id="counter_progress">(2)</label>
                         <div class="text_input">
                             <input class="in_progress"  onfocus="this.value=''" type="text" id="task_to_add" placeholder="Wpisz tytuł zadania">
-                            <button type="submit" id="btn_add" onclick="myFunction1()">Dodaj +</button>
+                            <button type="submit" id="btn_add_progress" onclick="myFunction1()">Dodaj +</button>
                         </div>    
                     </form>
                 </section>    
-                <section class="list_with_tasks1">
-                     
+                <section class="list_with_tasks1">  
                 </section>
             </main>
 
@@ -50,14 +50,14 @@
                 <section class="task_to_post2">
                     <form>
                         <label>Zrobione</label>
+                        <label id="counter_completed">(1)</label>
                         <div class="text_input">
                             <input class="done" type="text" id="task_to_add" placeholder="Wpisz tytuł zadania">
-                            <button type="submit" id="btn_add" onclick="myFunction2()">Dodaj +</button>
+                            <button type="submit" id="btn_add_completed" onclick="myFunction2()">Dodaj +</button>
                         </div>    
                     </form>
                 </section>    
                 <section class="list_with_tasks2">
-                  
                 </section>
             </main>
 

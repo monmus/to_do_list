@@ -91,9 +91,48 @@ label {
     width: 90px;
 }
 
+#btn_add_progress {
+    background: white;
+    color:	grey;
+    font-family: inherit;
+    border:none;
+    border-radius: 25%;
+    padding:0.2rem;
+    -webkit-box-flex:1;
+    -ms-flex-positive:1;
+    flex-grow:1;
+    font-size: inherit;
+    cursor: pointer;
+    width: 90px;
+}
+
+#btn_add_completed {
+    background: white;
+    color:	grey;
+    font-family: inherit;
+    border:none;
+    border-radius: 25%;
+    padding:0.2rem;
+    -webkit-box-flex:1;
+    -ms-flex-positive:1;
+    flex-grow:1;
+    font-size: inherit;
+    cursor: pointer;
+    width: 90px;
+}
+
 #btn_add:hover {
     background-color: #2F4F4F;
 }
+
+#btn_add_progress:hover {
+    background-color: #2F4F4F;
+}
+
+#btn_add_completed:hover {
+    background-color: #2F4F4F;
+}
+
 
 .list_with_tasks {
     display: flex;
@@ -189,10 +228,6 @@ label {
     color:grey;
 }
 
-.task_date {
-    margin:0;
-    font-size: 0.7rem;
-}
 
 .task_text {
     margin: 0;

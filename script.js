@@ -1,4 +1,7 @@
-//do zrobienia
+//loop over query selector - will try later to make js shorter
+
+//To do
+
 
 const taskForm = document.querySelector('.task_to_post');
 
@@ -46,7 +49,6 @@ function addTask(task) {
     tasksList.appendChild(newTask);
 };
 
-
 function prepareTask(task) {
     return '<div class="task_descrip">' +
                 '<p class="task_text">'+task+'</p>' +
@@ -62,10 +64,17 @@ function getTask() {
     taskForm.addEventListener('submit', function(e) {
         e.preventDefault();
         let task = this.querySelector('.todo').value;
+        var buttonAdd = document.getElementById("btn_add");
+        var counter = document.getElementById("counter");
         
         if(task) {
            addTask(task); 
         };
+        count = 2;
+        buttonAdd.onclick = function() {
+        count += 1;
+        counter.innerHTML = '(' + count + ')';
+            };
     });
 };
 
@@ -84,9 +93,7 @@ function deleteTask(task) {
 
 
 
-
-
-//w trakcie
+//In progress
 
 const taskForm1 = document.querySelector('.task_to_post1');
 
@@ -109,7 +116,6 @@ function showTasks1() {
        addTask1(task1);
    }); 
 };
-
 
 function addTask1(task1) {
     let newTask1 = document.createElement('div');
@@ -150,10 +156,17 @@ function getTask1() {
     taskForm1.addEventListener('submit', function(e) {
         e.preventDefault();
         let task1 = this.querySelector('input').value;
+        var buttonAddProgress = document.getElementById("btn_add_progress");
+        var counterProgress = document.getElementById("counter_progress");
         
         if(task1) {
            addTask1(task1); 
         };
+        count = 2;
+        buttonAddProgress.onclick = function() {
+        count += 1;
+        counterProgress.innerHTML = '(' + count + ')';
+            };
     });
 };
 
@@ -170,10 +183,7 @@ function deleteTask(task1) {
 
 
 
-
-
-
-//zrobione
+//Completed
 
 const taskForm2 = document.querySelector('.task_to_post2');
 
@@ -195,7 +205,6 @@ function showTasks2() {
        addTask2(task2);
    }); 
 };
-
 
 function addTask2(task2) {
     let newTask2 = document.createElement('div');
@@ -238,10 +247,18 @@ function getTask2() {
     taskForm2.addEventListener('submit', function(e) {
         e.preventDefault();
         let task2 = this.querySelector('input').value;
+        var buttonAddCompleted = document.getElementById("btn_add_completed");
+        var counterCompleted = document.getElementById("counter_completed");
         
         if(task2) {
            addTask2(task2); 
         };
+
+        count = 1;
+        buttonAddCompleted.onclick = function() {
+        count += 1;
+        counterCompleted.innerHTML = '(' + count + ')';
+            };
     });
 };
 
@@ -258,7 +275,7 @@ function deleteTask(task2) {
 };
 
 
-
+//Input displays
 
 function myFunction() {
     document.querySelector('.todo').style.display = "block";
