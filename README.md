@@ -1,5 +1,5 @@
 # To Do List Aplication
-Simple to do App with Java Script. [Live Demo](https://pages.github.com/)
+Simple to do App with Java Script
 
 
 # Technologies
